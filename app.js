@@ -5,9 +5,9 @@ const path = require("path");
 const app = express();
 app.use(express.static("public"));
 
-const CLIENT_ID = "YOUR_CLIENT_ID";
-const CLIENT_SECRET = "YOUR_CLIENT_SECRET";
-const REDIRECT_URI = "https://your-app-name.onrender.com/callback"; // replace with your Render URL
+const CLIENT_ID = "1446207871007068170";
+const CLIENT_SECRET = "W7B8N8toPhUupJKd6YGA4WaJziSMC449";
+const REDIRECT_URI = "https://bubbas-best-friends.onrender.com/"; // replace with your Render URL
 
 app.get("/login", (req, res) => {
   const url = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=identify`;
